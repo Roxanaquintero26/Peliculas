@@ -16,13 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf import settings
-from appmovie.views import InicioView, PeliculaView
+from appmovies.views import InicioView, PeliculaView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', InicioView.as_view(), name='inicio'),
-    path('pelicula/', PeliculaView.as_view(), name='pelicula'),
+    path('peliculas/', PeliculaView.as_view(), name='pelicula'),
 ]
+
+# Configuracion de las imagenes para en django
 if settings.DEBUG:
     from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL,

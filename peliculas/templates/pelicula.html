@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">  
-  <head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas</title>
-  </head>  
-  <body>   
-  <h1>Datos de la peliculas</h1> 
-  
-  </body>  
-</html>
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>Peliculas</h1>
+    <div>
+        <h3>Datos<span>Peliculas</span> </h3>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Accusantium vitae 
+            aliquam eveniet iure aspernatur amet
+             fuga facere ducimus assumenda, deleniti 
+             odio, recusandae ab nihil, et iusto?
+             Cumque minima alias officia.
+        </p>
+        <ul>
+            <li>
+                Inicio
+            </li>
+            <li>
+                Consulta
+            </li>
+        </ul>
+        <button class="btn btn-primary"> Enviar</button>
+    </div>
+    <img src="/static/imagenes/avenger1.jpg">
+{% endblock %}

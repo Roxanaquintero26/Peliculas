@@ -7,7 +7,6 @@ class InicioView(TemplateView):
 
 
 # vistas de Peliculas
-class PeliculaView(TemplateView):
-     
+class PeliculaView(TemplateView): 
     template_name = "pelicula.html"
      

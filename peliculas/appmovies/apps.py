@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AppmovieConfig(AppConfig):
-    name = 'appmovie'
+    name = 'appmovies'
