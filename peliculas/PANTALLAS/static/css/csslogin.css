@@ -1,0 +1,124 @@
+body{
+    background: url(../imagenes/fondo.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.text-center{
+    margin:0 auto;
+    margin-top:10%;
+    padding: 0;
+    width: 1000px;
+    height: 1200px;
+    right: 135px;
+
+}
+
+
+.main-section{
+    margin:0 auto;
+    margin-top:75%;
+    padding: 0;
+    width: 800px;
+    height: 1200px;
+    right: -56px;
+
+}
+
+.modal-content{
+    background-color: rgba(247, 130, 130, 0.301);
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+ 
+}
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}
+
+.form-group input{
+    height: 50px;
+    font-size: 25px;
+    border:0;
+    padding-left: 70px;
+    border-radius: 5px;
+}
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top:4px;
+}
+
+.form-group#user-group::before{
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f023";
+}
+
+.form-group#inicio-group::before{
+    content: "\f1a0";
+}
+
+button{
+    
+    width: 100%;
+    margin: 40px 0 60px;
+}
+
+.forgot{
+    padding: 5px 0;
+}
+
+.forgot1 b{
+    
+    color: blue;
+    font-size: 30px;
+     
+     
+}
+
+.forgot b{
+    color: white;
+    font-size: 30px;
+}
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+h2{
+    color: #11428C;
+
+text-indent: 8px;
+
+
+
+font-family: Fredoka One;
+font-style: bold;
+font-weight: normal;
+font-size: 30px;
+line-height: 50px;
+/* identical to box height */
+
+text-indent: 8px;
+}
+
+.contenedor {
+    width: 110%;
+    height: 100px;
+    
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }

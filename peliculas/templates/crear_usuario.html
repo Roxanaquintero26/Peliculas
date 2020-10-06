@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block header %}
+{% include 'header.html' %}
+{% endblock %}
+{% block main %}
+{% load static %}
+<div class="container-fluid" style="margin-top: 3rem;">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 id="titulo1" class="font-weight-bold">Mantenimeinto de los usuarios</h3>
+                </div>
+                <div class="col-md-4">
+                    <a href="{% url 'usuario' %}" class="btn btn-primary float-right">Regresar</a>
+                </div>
+                
+            </div> 
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p}}
+                        <button class="btn btn-succes btn-block" type="submit">Registrar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
